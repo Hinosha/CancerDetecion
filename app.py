@@ -8,7 +8,15 @@ from PIL import Image
 # Constants
 MODEL_PATH = "skin_cancer_model.h5"
 GOOGLE_DRIVE_ID = "1aLa3vqZ4L6aVs9NJvfyEA7fK3B274yku"
-LABELS = ["Melanoma", "Nevus", "Seborrheic Keratosis"]
+LABELS = [
+    "actinic_keratoses",
+    "basal_cell_carcinoma",
+    "benign_keratosis",
+    "dermatofibroma",
+    "melanocytic_nevus",
+    "melanoma",
+    "vascular_lesion"
+]
 
 # Download the model if not already available
 if not os.path.exists(MODEL_PATH):
